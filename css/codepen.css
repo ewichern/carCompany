@@ -1,0 +1,166 @@
+html {
+   margin: 0;
+   padding: 0;
+   background: DarkGray;
+   font-family: Calibri, Arial, sans-serif;
+   font-size: 100%;
+   height: 100%;
+   line-height: 1.2em;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: Gray;
+   height: 100%;
+   -webkit-margin-before: 0em;
+   -webkit-margin-after: 0em;
+}
+
+header {
+   background: CadetBlue;
+   min-height: 3em;
+   max-height: none;
+}
+
+main {
+   margin-left: auto;
+   margin-right: auto;
+   background: Khaki;
+   width: 70%;
+   clear: both;
+}
+
+.navbar {
+   float: left;
+   margin: 0;
+   padding: 0;
+}
+
+.navbar ul {
+   display: inline-block;
+   font-size: 1.2em;
+   margin: 0;
+   padding: 0;
+}
+
+.navbar li {
+   list-style-type: none;
+   display: inline-block;
+   margin: 0;
+   padding: 0.5em;
+}
+
+.navbar-search {
+   width: 250px;
+   font-size: 0.9em;
+   float: right;
+   margin: 0;
+   padding: 0.5em;
+}
+
+.search-text-input {
+   display: inline-block;
+   font-size: 0.9em;
+   margin: 0.25em;
+   padding: 0.25em;
+}
+
+.btn-default {
+   display: inline-block;
+   font-size: 0.9em;
+   position: relative;
+   margin: 0.25px;
+   padding: 0.25em;
+}
+
+footer {
+   background: ForestGreen;
+   text-align: center;
+}
+
+.footer-links {
+   background: Red;
+   display: inline-block;
+   height: 100%;
+   position: relative;
+   margin-bottom: 1em;
+   padding: 1em;
+}
+
+.footer-links ul {
+   float: right;
+   text-align: center;
+   vertical-align: middle;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.footer-links li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.footer-text {
+   background: Gold;
+   display: inline-block;
+   text-align: left;
+   height: 100%;
+   margin: 0;
+   padding: 0.5em;
+}
+
+.footer-text p {
+   display: block;
+   margin: 0;
+   padding: 0.5em;
+}
+
+#aboutUs {
+   position: relative;
+   height: 100%;
+   clear: both;
+}
+
+#aboutUs p {
+   margin-top: 1em;
+   margin-bottom: 0;
+}
+
+#employees-title,
+#company-info-title {
+   margin: 0;
+}
+
+.rowContainer{
+   background: Aqua;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+}
+.leftCol {
+   background: Blue;
+   position: relative;
+   width: 45%;
+   display: inline-block;
+   margin: 2%;
+}
+
+.rightCol {
+   background: Green;
+   position: relative;
+   width: 45%;
+   display: inline-block;
+   margin: 2%;
+}

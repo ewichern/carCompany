@@ -1,96 +1,117 @@
 <!doctype html>
 <html>
 
-<head>
-   <title>Contact Ampere Autos</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact Ampere Autos</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 
+			<link rel="stylesheet" type="text/css" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css"/>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		-->
+	</head>
 
-<body>
-   <header>
-      <nav class="navbar">
-         <a href="#">Ampere Autos Home</a>
-         <a href="#">Vehicle Browser</a>
-         <a href="#">About Ampere Autos</a>
-         <a href="#">Contact Us</a>
-      </nav>
-      <form class="navbar-search" role="search">
-         <div>
-            <input type="text" class="search-text-input" placeholder="Search">
-         </div>
-         <button type="submit" class="btn-default">Submit</button>
-      </form>
-   </header>
-   <main>
-        <section id="contactBlurb">
-            <div id="contactTitle">
-                <h3>
-                    Get in touch with Ampere Autos!
-                </h3>
-            </div>
-            <div>
-                <p>
-                    You're welcome to send us an email directly at 
-                    <a href="mailto:contact@ampautos.com">contact@ampautos.com</a>
-                     or you can use the following form to get in touch with us. We're happy to field any questions about electric or hybrid vehicles, or we can have someone knowledgable provide more information about our sales process or service departments.
-                </p>
-            </div>
-        </section>
-        <section id="contactForm">
-            <form>
-                <div>
-                    <label>
-                        First name:
-                    </label>
-                    <input type="text" required="required" name="firstName" placeholder="First" />
-                </div>
-                <div>
-                    <label>
-                        Last name:
-                    </label>
-                    <input type="text" required="required" name="lastName" placeholder="Last" />
-                </div>
-                <div>
-                    <label>
-                        e-mail address:
-                    </label>
-                    <input type="text" required="required" name="email" placeholder="username@gmail.com" />
-                </div>
-                <div>
-                    <label>
-                        Question/comment: 
-                    </label>
-                    <textarea required="required" name="commentText">How can we help you today?</textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Send" />
-                    <input type="reset" value="Reset" />
-                </div>
-            </form>
-        </section>
-   </main>
-   <footer>
-      <div class="footer-links">
-         <a href="#">Home</a>
-         <a href="#">Vehicle Browser</a>
-         <a href="#">About Ampere Autos</a>
-         <a href="#">Contact Us</a>
-      </div>
-      <div class="footer-text">
-         <p class="footer-address">
-            1111 MadeUp Street
-            <br/> Imaginary, VA 22601
-         </p>
-         <p class="footer-phone-number">
-            555-555-5555
-         </p>
-         <p class="footer-contact-email">
-            <a href="mailto:contact@ampautos.com">contact@ampautos.com</a>
-         </p>
-         <p class="copyright-text">
-            Copyright Ampere Autos 2015
-         </p>
-      </div>
-   </footer>
-</body>
+	<body>
+		<div class="block-group">
+			<header class="block">
+				<div class="block-group">
+					<nav class="navbar block">
+						<ul class="block-group">
+							<li class="block"><a href="./Home.html">Ampere Autos Home</a></li>
+							<li class="block"><a href="./VehicleBrowser.html">Vehicle Browser</a></li>
+							<li class="block"><a href="./About.html">About Ampere Autos</a></li>
+							<li class="block"><a href="./ContactUs.html">Contact Us</a></li>
+						</ul>
+					</nav>
+					<div class="navbarSearch block">
+						<form role="search">
+							<input type="text" class="searchTextInput" placeholder="Search">
+							<button type="submit" class="btnDefault">Submit</button>
+						</form>
+					</div>
+				</div>
+			</header>
+			<div class="main block">
+				<div class="twoCol block-group">
+					<section class="block" id="contactBlurb">
+						<div id="contactTitle">
+							<h3>
+								Get in touch with Ampere Autos!
+							</h3>
+						</div>
+						<div>
+							<p>
+								You're welcome to send us an email directly at 
+								<a href="mailto:contact@ampautos.com?subject=Ampere%20Autos%20Inquiry">contact@ampautos.com</a>
+								or you can use the following form to get in touch with us. We're happy to field any questions about electric or hybrid vehicles, or we can have someone knowledgable provide more information about our sales process or service departments.
+							</p>
+						</div>
+					</section>
+					<section class="block" id="contactForm">
+						<form>
+							<div>
+								<label>
+									First name:
+								</label>
+								<input type="text" required="required" name="firstName" placeholder="First" />
+							</div>
+							<div>
+								<label>
+									Last name:
+								</label>
+								<input type="text" required="required" name="lastName" placeholder="Last" />
+							</div>
+							<div>
+								<label>
+									e-mail address:
+								</label>
+								<input type="email" required="required" name="email" placeholder="username@gmail.com" />
+							</div>
+							<div>
+								<label>
+									Question/comment: 
+								</label>
+								<textarea required="required" name="commentText">How can we help you today?</textarea>
+							</div>
+							<div>
+								<input type="submit" value="Send" />
+								<input type="reset" value="Reset" />
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+			<footer class="block">
+				<div class="block-group">
+					<div class="footerLinks block">
+						<ul class="block-group">
+							<li class="block"><a href="./Home.html">Ampere Autos Home</a></li>
+							<li class="block"><a href="./VehicleBrowser.html">Vehicle Browser</a></li>
+							<li class="block"><a href="./About.html">About Ampere Autos</a></li>
+							<li class="block"><a href="./ContactUs.html">Contact Us</a></li>
+						</ul>
+						<br/>
+					</div>
+					<div class="footerText block">
+						<p >
+							1111 MadeUp Street
+							<br/> Imaginary, VA 22601
+						</p>
+						<p>
+							555-555-5555
+						</p>
+						<p>
+							<a href="mailto:contact@ampautos.com">contact@ampautos.com</a>
+						</p>
+						<p>
+							Copyright Ampere Autos 2015
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 
 </html>

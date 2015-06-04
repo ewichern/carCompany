@@ -1,159 +1,167 @@
 <!doctype html>
 <html>
 
-<head>
-   <title>Ampere Autos</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About Ampere Autos</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 
+			<link rel="stylesheet" type="text/css" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css"/>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		-->
+	</head>
 
-   <style>
-        .hide {
-            visibility: hidden;
-        }
-   </style>
-</head>
-
-<body>
-   <header>
-      <nav class="navbar">
-         <a href="#">Ampere Autos Home</a>
-         <a href="#">Vehicle Browser</a>
-         <a href="#">About Ampere Autos</a>
-         <a href="#">Contact Us</a>
-      </nav>
-      <form class="navbar-search" role="search">
-         <div>
-            <input type="text" class="search-text-input" placeholder="Search">
-         </div>
-         <button type="submit" class="btn-default">Submit</button>
-      </form>
-   </header>
-   <main>
-        <section id="selectionDropdown">
-            <form>
-                <div>
-                    <select>
-                        <option value='' disabled selected style='display:none;'>Select a vehicle to display:</option>
-                        <option value='smartEV'>Smart FourTwo Electric Drive</option>
-                        <option value='nisLeaf'>Nissan Leaf</option>
-                        <option value='priusPlug'>Toyota Prius Plug-in</option>
-                        <option value='kiaSoulE'>Kia Soul EV</option>
-                        <option value='chevVolt'>Chevy Volt</option>
-                        <option value='honAcc'>Honda Accord Plug-in Hybrid</option>
-                        <option value='teslaS'>Tesla Model S</option>
-                    </select>
-                </div>
-            </form>
-        </section>
-        <section id="vehicleInfo" class="">
-            <div id="vehicleMakeModel">
-                <h3>
-                    Year / Make / Model
-                </h3>
-            </div>
-            <div id="vehicleImage">
-                <a href="#" title="Click for larger" target="_blank">
-                    <img src="#" alt="car name"/>
-                </a>
-            </div>
-            <div id="vehicleDetails">
-                <div id="general">
-                    <h4>
-                        General Info
-                    </h4>
-                     <div id="manufacturer">
-                         Manufacturer
-                     </div>
-                     <div id="model">
-                         Model
-                     </div>
-                     <div id="modelYear">
-                         Model Year
-                     </div>
-                     <div id="vehicleClass">
-                         Class (i.e. Compact, SUV, Truck, etc.)
-                     </div>
-                     <div id="bodyStyle">
-                         Style (example: 4-door sedan)
-                     </div>
-                     <div id="layout">
-                         Layout (example: V-6 mounted front, front-wheel drive)
-                     </div>
-                </div>
-                <div id="powertrain">
-                    <h4>
-                        Powertrain Info
-                    </h4>
-                     <div id="drivetrainType">
-                         Drivetrain: Hybrid or Electric?
-                     </div>
-                     <div id="engine">
-                         Engine specs - size, power, fuel type
-                     </div>
-                     <div id="electricMotor">
-                         Electric motor - size, power, motor type
-                     </div>
-                     <div id="transmission">
-                         Transmission type
-                     </div>
-                     <div id="battery">
-                         Battery size and type
-                     </div>
-                     <div id="range">
-                         Total range
-                     </div>
-                     <div id="electricRange">
-                         Electric-only range
-                     </div>
-                     <div id="charging">
-                         Charging information
-                     </div>
-                </div>
-                <div id="physDimensions">
-                    <h4>
-                        Physical Dimensions
-                    </h4>
-                     <div id="wheelbase">
-                         Wheelbase
-                     </div>
-                     <div id="length">
-                         Total Length
-                     </div>
-                     <div id="width">
-                         Width
-                     </div>
-                     <div id="height">
-                         Height
-                     </div>
-                     <div id="curbWeight">
-                         Curb Weight
-                     </div>
-                </div>
-            </div>
-        </section>
-        <br/>
-   </main>
-   <footer>
-      <div class="footer-links">
-         <a href="#">Home</a>
-         <a href="#">Vehicle Browser</a>
-         <a href="#">About Ampere Autos</a>
-         <a href="#">Contact Us</a>
-      </div>
-      <div class="footer-text">
-         <p class="footer-address">
-            1111 MadeUp Street
-            <br/> Imaginary, VA 22601
-         </p>
-         <p class="footer-phone-number">
-            555-555-5555
-         </p>
-         <p class="footer-contact-email">
-            <a href="mailto:contact@ampautos.com">contact@ampautos.com</a>
-         </p>
-         <p class="copyright-text">
-            Copyright Ampere Autos 2015
-         </p>
-      </div>
-   </footer>
-</body>
+	<body>
+		<div class="block-group">
+			<header class="block">
+				<div class="block-group">
+					<nav class="navbar block">
+						<ul class="block-group">
+							<li class="block"><a href="./Home.html">Ampere Autos Home</a></li>
+							<li class="block"><a href="./VehicleBrowser.html">Vehicle Browser</a></li>
+							<li class="block"><a href="./About.html">About Ampere Autos</a></li>
+							<li class="block"><a href="./ContactUs.html">Contact Us</a></li>
+						</ul>
+					</nav>
+					<div class="navbarSearch block">
+						<form role="search">
+							<input type="text" class="searchTextInput" placeholder="Search">
+							<button type="submit" class="btnDefault">Submit</button>
+						</form>
+					</div>
+				</div>
+			</header>
+			<div class="main block">
+				<div class="twoCol block-group">
+					<div class="block" id="selectColA">
+						<div class="block-group">
+							<section class="block" id="selectionDropdown">
+								<form>
+									<div>
+										<select>
+											<option value='' disabled selected style='display:none;'>Select a vehicle to display:</option>
+											<option value='smartEV'>Smart FourTwo Electric Drive</option>
+											<option value='nisLeaf'>Nissan Leaf</option>
+											<option value='priusPlug'>Toyota Prius Plug-in</option>
+											<option value='kiaSoulE'>Kia Soul EV</option>
+											<option value='chevVolt'>Chevy Volt</option>
+											<option value='honAcc'>Honda Accord Plug-in Hybrid</option>
+											<option value='teslaS'>Tesla Model S</option>
+										</select>
+									</div>
+								</form>
+							</section>
+							<section class="block" id="vehicleDetails">
+								<div id="powertrain">
+									<h4>Powertrain Info</h4>
+									<div id="drivetrainType">
+										Drivetrain: Hybrid or Electric?
+									</div>
+									<div id="engine">
+										Engine specs - size, power, fuel type
+									</div>
+									<div id="electricMotor">
+										Electric motor - size, power, motor type
+									</div>
+									<div id="transmission">
+										Transmission type
+									</div>
+									<div id="battery">
+										Battery size and type
+									</div>
+									<div id="range">
+										Total range
+									</div>
+									<div id="electricRange">
+										Electric-only range
+									</div>
+									<div id="charging">
+										Charging information
+									</div>
+								</div>
+								<div id="physDimensions">
+									<h4>Physical Dimensions</h4>
+									<div id="wheelbase">
+										Wheelbase
+									</div>
+									<div id="length">
+										Total Length
+									</div>
+									<div id="width">
+										Width
+									</div>
+									<div id="height">
+										Height
+									</div>
+									<div id="curbWeight">
+										Curb Weight
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="block" id="vehicleMakeModel">
+						<h3>Year / Make / Model</h3>
+					</div>
+					<div class="block" id="vehicleImage">
+						<a href="./images/car-chrome-mercedes-polish.jpg" title="Click for larger" target="_blank">
+							<img src="./images/car-chrome-mercedes-polish.jpg" alt="Chrome Mercedes"/>
+						</a>
+					</div>
+					<div class="block" id="general">
+						<h4>General Info</h4>
+						<div id="manufacturer">
+							Manufacturer
+						</div>
+						<div id="model">
+							Model
+						</div>
+						<div id="modelYear">
+							Model Year
+						</div>
+						<div id="vehicleClass">
+							Class (i.e. Compact, SUV, Truck, etc.)
+						</div>
+						<div id="bodyStyle">
+							Style (example: 4-door sedan)
+						</div>
+						<div id="layout">
+							Layout (example: V-6 mounted front, front-wheel drive)
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="block">
+				<div class="block-group">
+					<div class="footerLinks block">
+						<ul class="block-group">
+							<li class="block"><a href="./Home.html">Ampere Autos Home</a></li>
+							<li class="block"><a href="./VehicleBrowser.html">Vehicle Browser</a></li>
+							<li class="block"><a href="./About.html">About Ampere Autos</a></li>
+							<li class="block"><a href="./ContactUs.html">Contact Us</a></li>
+						</ul>
+						<br/>
+					</div>
+					<div class="footerText block">
+						<p >
+							1111 MadeUp Street
+							<br/> Imaginary, VA 22601
+						</p>
+						<p>
+							555-555-5555
+						</p>
+						<p>
+							<a href="mailto:contact@ampautos.com">contact@ampautos.com</a>
+						</p>
+						<p>
+							Copyright Ampere Autos 2015
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 
 </html>

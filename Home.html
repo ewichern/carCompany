@@ -4,130 +4,63 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>About Ampere Autos</title>
+		<title>Ampere Autos</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
 		<!-- 
-			<link rel="stylesheet" type="text/css" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css"/>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css"/>	
 		-->
 	</head>
 
 	<body>
 		<div class="block-group">
 			<header class="block">
-				<div class="block-group">
-					<nav class="navbar block">
-						<ul class="block-group">
-							<li class="block"><a href="./Home.html">Ampere Autos Home</a></li>
-							<li class="block"><a href="./VehicleBrowser.html">Vehicle Browser</a></li>
-							<li class="block"><a href="./About.html">About Ampere Autos</a></li>
-							<li class="block"><a href="./ContactUs.html">Contact Us</a></li>
-						</ul>
-					</nav>
-					<div class="navbarSearch block">
-						<form role="search">
-							<input type="text" class="searchTextInput" placeholder="Search">
-							<button type="submit" class="btnDefault">Submit</button>
-						</form>
-					</div>
+				<a href="#menu" class="menu-link">Menu</a>
+				<nav class="navbar">
+					<ul class="block-group">
+						<li class="block"><a href="./Home.html">Ampere Autos</a></li>
+						<li class="block"><a href="./VehicleBrowser.html">Vehicle Browser</a></li>
+						<li class="block"><a href="./About.html">About</a></li>
+						<li class="block"><a href="./ContactUs.html">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div class="navbarSearch">
+					<form role="search">
+						<input type="text" class="searchTextInput" placeholder="Search">
+						<button type="submit" class="btnDefault">Submit</button>
+					</form>
 				</div>
 			</header>
 			<div class="main block">
-				<section id="carousel">
-         <div id="slider">
-            <button class="carousel-button" id="carousel-prev-button" type="">Carousel Prev Button</button>
-
-            <div class="slide-items">
-
-               <div id="slide-item1">
-                  <img class="slide" id="slide1-image" src="">Slide1-image</img>
-                  <div class="carousel-banner">
-                     <h3>Slide 1 banner text!</h3>
-                  </div>
-                  <div class="carousel-description">
-                     <ul class="carousel-list">
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                     </ul>
-                  </div>
-               </div>
-
-               <div id="slide-item2">
-                  <img class="slide" id="slide2-image" src="">Slide2-image</img>
-                  <div class="carousel-banner">
-                     <h3>Slide 2 banner text!</h3>
-                  </div>
-                  <div class="carousel-description">
-                     <ul class="carousel-list">
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                     </ul>
-                  </div>
-               </div>
-
-               <div id="slide-item3">
-                  <img class="slide" id="slide3-image" src="">Slide3-image</img>
-                  <div class="carousel-banner">
-                     <h3>Slide 3 banner text!</h3>
-                  </div>
-                  <div class="carousel-description">
-                     <ul class="carousel-list">
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                     </ul>
-                  </div>
-               </div>
-
-               <div id="slide-item4">
-                  <img class="slide" id="slide4-image" src="">Slide4-image</img>
-                  <div class="carousel-banner">
-                     <h3>Slide 4 banner text!</h3>
-                  </div>
-                  <div class="carousel-description">
-                     <ul class="carousel-list">
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                     </ul>
-                  </div>
-               </div>
-
-               <div id="slide-item5">
-                  <img class="slide" id="slide5-image" src="">Slide5-image</img>
-                  <div class="carousel-banner">
-                     <h3>Slide 5 banner text!</h3>
-                  </div>
-                  <div class="carousel-description">
-                     <ul class="carousel-list">
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                        <li>Slide bullet</li>
-                     </ul>
-                  </div>
-               </div>
-
-            </div>
-
-            <div class="slide-loc">
-               <input checked type="radio" name="slide" class="control" id="Slide1" />
-               <label for="Slide1" id="s1"></label>
-               <input checked type="radio" name="slide" class="control" id="Slide2" />
-               <label for="Slide2" id="s2"></label>
-               <input checked type="radio" name="slide" class="control" id="Slide3" />
-               <label for="Slide3" id="s3"></label>
-               <input checked type="radio" name="slide" class="control" id="Slide4" />
-               <label for="Slide4" id="s4"></label>
-               <input checked type="radio" name="slide" class="control" id="Slide5" />
-               <label for="Slide5" id="s5"></label>
-            </div>
-
-            <button class="carousel-button" id="carousel-next-button" type="">Carousel Next Button</button>
-         </div>
-      </section>
+				<section class="slider">
+					<!-- <button class="btnSlider slidePrev">Prev</button>
+					<button class="btnSlider slideNext">Next</button>
+					-->
+					<a class="prev sliderControl" href="#" role="button"> 
+						<span class="btnSlider slidePrev"> < </span>
+					</a>
+					<a class="next sliderControl" href="#" role="button"> 
+						<span class="btnSlider slideNext"> > </span>
+					</a>
+					<ol class="sliderIndicators">
+						<li class="active" id="slide1" value="0"></li>
+						<li id="slide2" value="1"></li>
+						<li id="slide3" value="2"></li>
+					</ol>
+					<div class="slideItems">
+						<div id="slide-item1" style="display: inline-block;">
+							<img src="./images/red-car-vehicle-transportation.jpg"/>
+						</div>
+						<div id="slide-item2">
+							<img src="./images/lights-clouds-dark-car.jpg"/>
+						</div>
+						<div id="slide-item3">
+							<img src="./images/car-chrome-mercedes-polish.jpg"/>
+						</div>
+					</div>
+				</section>
 			</div>
 			<footer class="block">
 				<div class="block-group">

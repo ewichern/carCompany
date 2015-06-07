@@ -37,10 +37,10 @@
 				<div class="twoCol block-group">
 					<div class="block" id="selectColA">
 						<div class="block-group">
-							<section class="block" id="selectionDropdown">
+							<section class="block">
 								<form>
 									<div>
-										<select>
+										<select id="vehicleSelect">
 											<option value='' disabled selected style='display:none;'>Select a vehicle to display:</option>
 											<option value='nissanLeaf'>Nissan Leaf</option>
 											<option value='chevyVolt'>Chevy Volt</option>
@@ -48,53 +48,6 @@
 										</select>
 									</div>
 								</form>
-							</section>
-							<section class="block" id="vehicleDetails">
-								<div id="powertrain">
-									<h4>Powertrain Info</h4>
-									<div id="drivetrainType">
-										Drivetrain: Hybrid or Electric?
-									</div>
-									<div id="engine">
-										Engine specs - size, power, fuel type
-									</div>
-									<div id="electricMotor">
-										Electric motor - size, power, motor type
-									</div>
-									<div id="transmission">
-										Transmission type
-									</div>
-									<div id="battery">
-										Battery size and type
-									</div>
-									<div id="range">
-										Total range
-									</div>
-									<div id="electricRange">
-										Electric-only range
-									</div>
-									<div id="charging">
-										Charging information
-									</div>
-								</div>
-								<div id="physDimensions">
-									<h4>Physical Dimensions</h4>
-									<div id="wheelbase">
-										Wheelbase
-									</div>
-									<div id="length">
-										Total Length
-									</div>
-									<div id="width">
-										Width
-									</div>
-									<div id="height">
-										Height
-									</div>
-									<div id="curbWeight">
-										Curb Weight
-									</div>
-								</div>
 							</section>
 						</div>
 					</div>
@@ -106,26 +59,39 @@
 							<img src="./images/car-chrome-mercedes-polish.jpg" alt="Chrome Mercedes"/>
 						</a>
 					</div>
-					<div class="block" id="general">
+					<div class="block" id="generalInfo">
 						<h4>General Info</h4>
+						
+						<h6>Manufacturer:</h6>
 						<div id="manufacturer">
 							Manufacturer
 						</div>
+					
+						<h6>Model:</h6>
 						<div id="model">
 							Model
 						</div>
+					
+						<h6>Model Year:</h6>
 						<div id="modelYear">
 							Model Year
 						</div>
+						
+						<h6>Class:</h6>
 						<div id="vehicleClass">
 							Class (i.e. Compact, SUV, Truck, etc.)
 						</div>
+						
+						<h6>Body Style:</h6>
 						<div id="bodyStyle">
 							Style (example: 4-door sedan)
 						</div>
+						
+						<h6>Layout:</h6>
 						<div id="layout">
 							Layout (example: V-6 mounted front, front-wheel drive)
 						</div>
+						
 					</div>
 				</div>
 			</div>

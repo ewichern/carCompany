@@ -70,14 +70,22 @@ $(document).ready(function() {
 		currentIndex = this.value;
 		cycleItems();
 	});
-	
-	vehicleSelect.change(function () {
+
+	vehicleSelect.change(function() {
 		selection = this.value;
-		var selectedCar = carArray[selection];
-		var genInfo = selectedCar.generalInfo;
-		for (key in genInfo) {
-			$('#'.concat(key.toString())).html(genInfo[key]);
-		}
+		var selectedCar = carSelectionArray[selection];
+		for (key in selectedCar) {
+			$('.'.concat(key.toString())).html(selectedCar[key]);
+			if (key === 'imageFilename') {
+				$('#vehicleImage a').attr('href', './images/'.concat(selectedCar[key]).toString());
+				$('#vehicleImage img').attr('src', './images/'.concat(selectedCar[key]).toString());
+				$('#vehicleImage img').attr('alt', selection);
+			}
+		}	
+		$('#selectionDropdown').addClass('block');
+		$('.vehicleInfo .hide').addClass('block');
+		$('#selectionDropdown').removeClass('textAlignCenter');
+		$('.vehicleInfo .hide').removeClass('hide');
 	});
 });
 
@@ -88,46 +96,12 @@ $(document).ready(function() {
 var carData = {};
 
 carData.proto = {
-	generalInfo: {},
-	powertrainInfo: {},
-	physicalInfo: {}
-};
-
-
-
-// Object factory
-carData.create = function(genInfo, powerInfo, physInfo) {
-	var tempCar = Object.create(this.proto);
-	tempCar.generalInfo = genInfo;
-	tempCar.powertrainInfo = powerInfo;
-	tempCar.physicalInfo = physInfo;
-	return tempCar;
-};
-
-var carGenInfo = {};
-
-carGenInfo.proto = {
 	manufacturer: "",
 	model: "",
 	modelYear: 1900,
 	vehicleClass: "",
 	bodyStyle: "",
-	layout: ""
-};
-
-carGenInfo.create = function(infoArray) {
-	var tempInfo = (Object.create(this.proto));
-	var count = 0;
-	for (var key in tempInfo) {
-		tempInfo[key] = infoArray[count];
-		count++;
-	}
-	return tempInfo;
-};
-
-var carPowInfo = {};
-
-carPowInfo.proto = {
+	layout: "",
 	drivetrainType: "",
 	engine: "",
 	electricMotor: "",
@@ -135,47 +109,29 @@ carPowInfo.proto = {
 	battery: "",
 	range: "",
 	electricRange: "",
-	charging: ""
-};
-
-carPowInfo.create = function(infoArray) {
-	var tempInfo = (Object.create(this.proto));
-	var count = 0;
-	for (var key in tempInfo) {
-		tempInfo[key] = infoArray[count];
-		count++;
-	}
-	return tempInfo;
-};
-
-var carPhysInfo = {};
-
-carPhysInfo.proto = {
+	charging: "",
 	wheelbase: "",
 	length: "",
 	width: "",
 	height: "",
-	curbWeight: ""
+	curbWeight: "",
+	imageFilename: ""
 };
 
-carPhysInfo.create = function(infoArray) {
-	var tempInfo = (Object.create(this.proto));
+// Object factory
+carData.create = function(dataArray) {
+	var tempCar = Object.create(this.proto);
 	var count = 0;
-	for (var key in tempInfo) {
-		tempInfo[key] = infoArray[count];
+	for (var key in tempCar) {
+		tempCar[key] = dataArray[count];
 		count++;
 	}
-	return tempInfo;
+	return tempCar;
 };
 
-voltGenInfoArray = ["General Motors", "Chevrolet Volt", 2015, "Compact Car", "5-door hatchback", "Transverse front-engine, front-wheel drive"];
-voltPowInfoArray = ["Hybrid (GM Voltec)", "1 x 84hp, 1398cc EcoFLEX Inline 4cyl", "1 x 149hp, 1 x 74hp, permanent magnet motor/generators", "Voltec Multi-mode electric transaxle", "17.1kWh lithium-Ion", "380 miles", "52 miles", "120V/15A, 240V/20A AC"];
-voltPhysInfoArray = ["105.7 in", "177.1 in", "70.4 in", "56.6 in", "3,794 lb"];
+voltArray = ["General Motors", "Chevrolet Volt", 2015, "Compact Car", "5-door hatchback", "Transverse front-engine, front-wheel drive", "Hybrid (GM Voltec)", "1 x 84hp, 1398cc EcoFLEX Inline 4cyl", "1 x 149hp, 1 x 74hp, permanent magnet motor/generators", "Voltec Multi-mode electric transaxle", "17.1kWh lithium-Ion", "380 miles", "52 miles", "120V/15A, 240V/20A AC", "105.7 in", "177.1 in", "70.4 in", "56.6 in", "3,794 lb", "volt.jpg"];
+leafArray = ["Nissan", "Leaf", "2013", "Compact Car", "5-door hatchback", "Front-engine, front-wheel drive", "Electric", "n/a", "110hp synchronous motor", "Single speed constant ratio", "24kWh lithium-ion", "75 miles", "75 miles", "3.3kW (optional 6.6kW + 240V AC), adaptors for domestic AC sockets -- max 44 kW 480V DC", "106.3 in", "175.0 in", "69.7 in", "61.0 in", "3,291 lb", "leaf.jpg"];
+chevyVolt = carData.create(voltArray);
+nissanLeaf = carData.create(leafArray);
 
-voltGenInfo = carGenInfo.create(voltGenInfoArray);
-voltPowInfo = carPowInfo.create(voltPowInfoArray);
-voltPhysInfo = carPhysInfo.create(voltPhysInfoArray);
-
-chevyVolt = carData.create(voltGenInfo, voltPowInfo, voltPhysInfo);
-
-carArray = { chevyVolt: chevyVolt };
+carSelectionArray = {chevyVolt: chevyVolt, nissanLeaf: nissanLeaf};

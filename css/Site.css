@@ -203,6 +203,21 @@ body {
 	background-color: #ededed;
 }
 
+.clearfix {
+	clear: both;
+}
+
+.textAlignRight {
+	text-align: right;
+}
+.textAlignCenter {
+	text-align: center;
+}
+
+.hide {
+	visibility: hidden;
+}
+
 a {
 	color: #43bc9a;
 	text-decoration: none;
@@ -214,6 +229,7 @@ a:hover {
 
 p {
 	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 h1,
@@ -284,6 +300,21 @@ footer a:hover {
 
 header .block-group {
 	position: relative;
+}
+
+.vehicleInfo {
+	line-height: 1.2;
+}
+
+.vehicleInfo h1,
+.vehicleInfo h2,
+.vehicleInfo h3,
+.vehicleInfo h4,
+.vehicleInfo h5,
+.vehicleInfo h6
+{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .navbar {
@@ -372,6 +403,7 @@ footer .block-group .block {
 
 .twoCol>.block {
 	width: 100%;
+	margin-bottom: 1em;
 }
 
 #contactForm textArea {
@@ -380,15 +412,6 @@ footer .block-group .block {
 
 #vehicleImage img {
 	width: 100%
-}
-
-.main h1,
-.main h2,
-.main h3,
-.main h4,
-.main h5,
-.main h6 {
-	margin-top: 1rem;
 }
 
 #contactForm input[type="text"] {
@@ -435,7 +458,7 @@ footer .block-group .block {
 }
 /* Larger than tablet */
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 	/*	.navbar {
 			 width: 65%; }
 		 .navbar li {
@@ -468,9 +491,12 @@ footer .block-group .block {
 		width: 46%;
 		margin: 1rem 2%;
 	}
-	#selectColA div {
+	.vehicleInfo .block:nth-child(odd) {
 		text-align: right;
+		clear: both;
 	}
+	
+	
 	footer .block-group .block {
 		width: 46%;
 		margin: 1rem 2%;

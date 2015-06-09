@@ -8,7 +8,6 @@ $color5: #c8c8c8;
 $color6: #dbdbdb;
 $color7: #ededed;
 */
-
 /* This section modified from Skeleton CSS framework
 * Skeleton V2.0.4 -  Copyright 2014, Dave Gamache
 * www.getskeleton.com
@@ -36,8 +35,10 @@ input[type="button"] {
 	border-radius: .2em;
 	border: 1px solid #ededed;
 	cursor: pointer;
-	box-sizing: border-box; 
-	vertical-align: top; }
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
 .btnDefault:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -50,9 +51,10 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
 	background-color: #666;
 	border-color: #92dac6;
-	color: #92dac6; }
-
+	color: #92dac6;
+}
 /* Forms–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -63,14 +65,18 @@ input[type="password"],
 textarea,
 select {
 	height: 1.7em;
-	padding: 0 .5em; /* The 6px vertically centers text on FF, ignored by Webkit */
+	padding: 0 .5em;
+	/* The 6px vertically centers text on FF, ignored by Webkit */
+
 	background-color: #ededed;
 	border: 1px solid #444;
 	border-radius: .2em;
 	box-shadow: none;
-	box-sizing: border-box; 
-	vertical-align: top; }
+	box-sizing: border-box;
+	vertical-align: top;
+}
 /* Removes awkward default styles on some inputs for iOS */
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -81,11 +87,15 @@ input[type="password"],
 textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none; }
+	appearance: none;
+}
+
 textarea {
 	min-height: 5em;
 	padding-top: .5em;
-	padding-bottom: .5em; }
+	padding-bottom: .5em;
+}
+
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -96,43 +106,89 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
 	border: 1px solid #92dac6;
-	outline: 0; }
+	outline: 0;
+}
+
 label,
 legend {
 	display: block;
 	margin-bottom: .5rem;
-	font-weight: 600; }
+	font-weight: 600;
+}
+
 fieldset {
 	padding: 0;
-	border-width: 0; }
+	border-width: 0;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
-	display: inline; }
+	display: inline;
+}
+
 label > .label-body {
 	display: inline-block;
 	margin-left: .5rem;
-	font-weight: normal; }
-
+	font-weight: normal;
+}
 /*! PocketGrid 1.1.0
 * Copyright 2013 Arnaud Leray
 * MIT License
 *
 * Also dumped through codebeautifier to minimize # lines.
 */
-.block-group,.block,.block-group:after,.block:after,.block-group:before,.block:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-.block-group{zoom:1;list-style-type:none;margin:0;padding:0;}
-.block-group:before,.block-group:after{display:table;content:"";line-height:0;}
-.block-group:after{clear:both;}
-.block{float:left;width:100%;}
-.block-group > .block-group,.block-group > .block-group > .block-group{clear:none;float:left;margin:0!important;}
 
+.block-group,
+.block,
+.block-group:after,
+.block:after,
+.block-group:before,
+.block:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.block-group {
+	zoom: 1;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.block-group:before,
+.block-group:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.block-group:after {
+	clear: both;
+}
+
+.block {
+	float: left;
+	width: 100%;
+}
+
+.block-group > .block-group,
+.block-group > .block-group > .block-group {
+	clear: none;
+	float: left;
+	margin: 0!important;
+}
 /* Start standard CSS */
 /* Setting base styles */
 
-root { 
-    display: block; }
+root {
+	display: block;
+}
+
 html {
-	font-size: 62.5%; }
+	font-size: 62.5%;
+}
+
 body {
 	font-size: 1.4em;
 	line-height: 1.5em;
@@ -144,53 +200,109 @@ body {
 	text-decoration: none;
 	text-transform: none;
 	word-spacing: 0;
-	background-color: #ededed; }
+	background-color: #ededed;
+}
 
-a { color: #43bc9a; 
-	text-decoration: none; }
-a:hover { color: #92dac6 }
+a {
+	color: #43bc9a;
+	text-decoration: none;
+}
 
-p {	margin-top: 0; }
+a:hover {
+	color: #92dac6
+}
 
-h1, h2, h3, h4, h5, h6 {
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin-top: 0;
 	margin-bottom: 1rem;
-	font-weight: 300; }
-h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-size: 3.4rem; line-height: 1.25; letter-spacing: -.1rem; }
-h3 { font-size: 2.8rem; line-height: 1.3;  letter-spacing: -.1rem; }
-h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-weight: bold; }
+	font-weight: 300;
+}
 
-header, footer {
+h1 {
+	font-size: 4.0rem;
+	line-height: 1.2;
+	letter-spacing: -.1rem;
+}
+
+h2 {
+	font-size: 3.4rem;
+	line-height: 1.25;
+	letter-spacing: -.1rem;
+}
+
+h3 {
+	font-size: 2.8rem;
+	line-height: 1.3;
+	letter-spacing: -.1rem;
+}
+
+h4 {
+	font-size: 2.4rem;
+	line-height: 1.35;
+	letter-spacing: -.08rem;
+}
+
+h5 {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	letter-spacing: -.05rem;
+}
+
+h6 {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	letter-spacing: 0;
+	font-weight: bold;
+}
+
+header,
+footer {
 	position: relative;
 	min-height: 2em;
-	background-color: #43bc9a; 
-	padding: 1rem; }
-footer a, header a {
-	color: #ededed; }
-header a:hover, footer a:hover {
-	color: #92dac6; }
+	background-color: #43bc9a;
+	padding: 1rem;
+}
+
+footer a,
+header a {
+	color: #ededed;
+}
+
+header a:hover,
+footer a:hover {
+	color: #92dac6;
+}
+
 header .block-group {
 	position: relative;
 }
+
 .navbar {
 	overflow: hidden;
-	max-height: 0;
 	clear: both;
-	-webkit-transition: all 0.3s ease-out;  
+	max-height: 0;
+	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-ms-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-	font-size: 1.2em; 
-	width: 100%;
+	font-size: 1.2em;
+	width: 79%;
 	box-sizing: border-box;
 }
+
 .navbar li {
 	text-align: left;
-	width: 100%; 
+	width: 100%;
 }
 /* Navbar toggle draws from Brad Frost's Toggle Navigation 
 * Responsive Design Pattern
@@ -198,45 +310,75 @@ header .block-group {
 * 
 * MIT License: http://opensource.org/licenses/MIT
 */
+
 .navbar.active {
 	max-height: 15em;
 }
+
 a.menu-link {
-	font-size: 1.2em; 
-	width: 100%;
+	font-size: 1.2em;
+	width: 19%;
 	box-sizing: border-box;
-	float: left;
-	display: block;
 }
+
 .navbarSearch {
 	position: absolute;
-	width: 230px;
 	right: 1%;
 	top: 0.6em;
-	box-sizing: border-box;
+	width: 80%;
+}
+
+.navbarSearch form {
+	float: right;
+}
+
+.searchInput {
+	position: absolute;
+	right: 85px;
+}
+
+.searchInput input {
+	width: 100%;
+}
+
+#searchSubmit {
+	float: right;
+	width: 80px;
 }
 
 footer .block-group {
 	margin-left: auto;
-	margin-right: auto; }
+	margin-right: auto;
+}
+
 footer .block-group .block {
-	width: 100%; }
+	width: 100%;
+}
+
 .footerLinks .block-group .block {
 	width: 100%;
 	margin: 0;
-	text-align: center; }
+	text-align: center;
+}
+
 .footerText {
-	text-align: center; }
+	text-align: center;
+}
 
 .twoCol {
 	background-color: #dbdbdb;
-	padding: 1rem; }
+	padding: 1rem;
+}
+
 .twoCol>.block {
-	width: 100%;  } 
+	width: 100%;
+}
 
 #contactForm textArea {
-	width: 100%;}
-#vehicleImage img{
+	width: 100%;
+}
+
+#vehicleImage img {
 	width: 100%
 }
 
@@ -245,121 +387,143 @@ footer .block-group .block {
 .main h3,
 .main h4,
 .main h5,
-.main h6
-{
-	margin-top: 1rem;}
+.main h6 {
+	margin-top: 1rem;
+}
 
 #contactForm input[type="text"] {
-	width: 15em;}
+	width: 15em;
+}
+
 #contactForm input[type="email"] {
-	width: 20em;}
-
-
+	width: 20em;
+}
 /* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Note: The best way to structure the use of media queries is to create the queries
 *  near the relevant code. For example, if you wanted to change the styles for buttons
 *  on small devices, paste the mobile query code up in the buttons section and style it
 *  there.*/
-
 /* Larger than mobile */
+
 @media (min-width: 400px) {}
 /* Larger than phablet (also point when grid becomes active) */
+
 @media (min-width: 550px) {}
 /* Larger than tablet */
+
 @media (min-width: 750px) {}
 /* Larger than desktop */
+
 @media (min-width: 1000px) {}
 /* Larger than Desktop HD */
+
 @media (min-width: 1200px) {}
-
-
 /* Larger than mobile */
+
 @media (min-width: 400px) {
 	.twoCol {
 		width: 90%;
 		margin-left: auto;
-		margin-right: auto; }
+		margin-right: auto;
+	}
 	#contactForm textArea {
-		width: 80%;}
-	#vehicleImage img{
+		width: 80%;
+	}
+	#vehicleImage img {
 		width: 100%
-	}}
-
+	}
+}
 /* Larger than tablet */
+
 @media (min-width: 800px) {
 	/*	.navbar {
-			width: 65%; }
-		.navbar li {
-			width: 25%;
-			text-align: center; }
-		.navbarSearch {
-			width: 35%; }
+			 width: 65%; }
+		 .navbar li {
+			 width: 25%;
+			 text-align: center; }
+		 .navbarSearch {
+			 width: 35%; }
 	*/
+
 	a.menu-link {
 		display: none;
 	}
 	.navbar {
 		max-height: none;
-		padding-right: 230px;
+		width: 80%
 	}
 	.navbar li {
 		text-align: center;
 		width: 25%;
 	}
+	.navbarSearch {
+		width: 20%;
+	}
 	.twoCol {
 		width: 80%;
 		margin-left: auto;
-		margin-right: auto; }
+		margin-right: auto;
+	}
 	.twoCol>.block {
 		width: 46%;
-		margin: 1rem 2%; }
-	#selectColA div{
-		text-align: right; }
+		margin: 1rem 2%;
+	}
+	#selectColA div {
+		text-align: right;
+	}
 	footer .block-group .block {
 		width: 46%;
-		margin: 1rem 2%; }
+		margin: 1rem 2%;
+	}
 	.footerLinks .block-group .block {
 		width: 100%;
 		text-align: right;
-		margin: 0; }
+		margin: 0;
+	}
 	.footerText {
-		text-align: left; }	 
-	#contactForm textArea {
-		width: 100%;}
-	#vehicleImage img{
-		width: 100%
-	}}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-	/* .navbar {
-		width: 70%;
-		margin-right: 5%; }
-	.navbarSearch {
-		width: 25%; } */
-	header {
-		padding: 1rem 5%;}
-	.navbarSearch {
-		right: 5%;
+		text-align: left;
 	}
 	#contactForm textArea {
-		width: 80%;}
-	#vehicleImage img{
-		width: 80%
-	}}
+		width: 100%;
+	}
+	#vehicleImage img {
+		width: 100%
+	}
+}
+/* Larger than desktop */
 
+@media (min-width: 1000px) {
+	/* .navbar {
+		 width: 70%;
+		 margin-right: 5%; }
+	 .navbarSearch {
+		 width: 25%; } */
+
+	header {
+		padding: 1rem 5%;
+	}
+	
+	#contactForm textArea {
+		width: 80%;
+	}
+	#vehicleImage img {
+		width: 80%
+	}
+}
 /* Larger than Desktop HD */
+
 @media (min-width: 1200px) {
 	/* .navbar {
-		width: 55%;
-		margin-right: 20%; }
-	.navbarSearch {
-		width: 25%; }
+		 width: 55%;
+		 margin-right: 20%; }
+	 .navbarSearch {
+		 width: 25%; }
 	*/
-	#contactForm textArea {
-		width: 60%;}
-}
 
+	#contactForm textArea {
+		width: 60%;
+	}
+}
 /* 
  * Code and design for carousel/slider comes partially from 
  * here: http://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/
@@ -377,45 +541,53 @@ footer .block-group .block {
 	text-align: center;
 	position: relative;
 }
+
 .slideItems div {
 	width: 100%;
 	display: inline-block;
 	display: none;
 }
+
 .slideItems img {
 	width: 100%;
 	margin-bottom: -.5em;
 }
+
 .btnSlider {
 	position: absolute;
 	top: 50%;
 	margin-top: -.5em;
 }
+
 .slideNext {
 	right: 10%;
 }
+
 .slidePrev {
 	left: 10%;
 }
+
 .sliderControl.next {
 	right: 0;
 	left: auto;
-	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-	background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
-	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 	background-repeat: repeat-x;
 	z-index: 10;
 }
+
 .sliderControl.prev {
-	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-	background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
-	background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 	background-repeat: repeat-x;
 }
+
 .sliderControl {
 	position: absolute;
 	top: 0;
@@ -426,14 +598,16 @@ footer .block-group .block {
 	font-weight: bolder;
 	color: #fff;
 	text-align: center;
-	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 	filter: alpha(opacity=50);
 	opacity: .5;
 	z-index: 5;
 }
+
 .sliderControl:hover {
 	opacity: .9;
 }
+
 .sliderIndicators {
 	position: absolute;
 	bottom: 1em;
@@ -445,12 +619,14 @@ footer .block-group .block {
 	text-align: center;
 	list-style: none;
 }
+
 .sliderIndicators .active {
 	width: .6em;
 	height: .6em;
 	margin: 5px;
 	background-color: #fff;
 }
+
 .sliderIndicators li {
 	display: inline-block;
 	width: .6em;
@@ -459,7 +635,7 @@ footer .block-group .block {
 	text-indent: -999px;
 	cursor: pointer;
 	background-color: #000 \9;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid #fff;
 	border-radius: 10px;
 }

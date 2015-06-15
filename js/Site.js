@@ -26,13 +26,13 @@ $(document).ready(function() {
 	 */
 
 	var currentIndex = 0;
-	var items = $('.slideItems div');
+	var items = $('.slideItems>div');
 	var indicators = $('.sliderIndicators li');
 	var vehicleSelect = $('#vehicleSelect');
 	var itemAmt = items.length;
 
 	function cycleItems() {
-		var item = $('.slideItems div').eq(currentIndex);
+		var item = $('.slideItems>div').eq(currentIndex);
 		items.hide();
 		indicators.removeClass('active');
 		$(indicators[currentIndex]).addClass('active');
@@ -87,7 +87,6 @@ $(document).ready(function() {
 		$('#selectionDropdown').removeClass('textAlignCenter');
 		$('.vehicleInfo .hide').removeClass('hide');
 	});
-});
 
 /*
  * Code for Vehicle Browser page
@@ -129,9 +128,10 @@ carData.create = function(dataArray) {
 	return tempCar;
 };
 
-voltArray = ["General Motors", "Chevrolet Volt", 2015, "Compact Car", "5-door hatchback", "Transverse front-engine, front-wheel drive", "Hybrid (GM Voltec)", "1 x 84hp, 1398cc EcoFLEX Inline 4cyl", "1 x 149hp, 1 x 74hp, permanent magnet motor/generators", "Voltec Multi-mode electric transaxle", "17.1kWh lithium-Ion", "380 miles", "52 miles", "120V/15A, 240V/20A AC", "105.7 in", "177.1 in", "70.4 in", "56.6 in", "3,794 lb", "volt.jpg"];
-leafArray = ["Nissan", "Leaf", "2013", "Compact Car", "5-door hatchback", "Front-engine, front-wheel drive", "Electric", "n/a", "110hp synchronous motor", "Single speed constant ratio", "24kWh lithium-ion", "75 miles", "75 miles", "3.3kW (optional 6.6kW + 240V AC), adaptors for domestic AC sockets -- max 44 kW 480V DC", "106.3 in", "175.0 in", "69.7 in", "61.0 in", "3,291 lb", "leaf.jpg"];
 chevyVolt = carData.create(voltArray);
 nissanLeaf = carData.create(leafArray);
+teslaS = carData.create(teslaArray);
 
-carSelectionArray = {chevyVolt: chevyVolt, nissanLeaf: nissanLeaf};
+carSelectionArray = {chevyVolt: chevyVolt, nissanLeaf: nissanLeaf, teslaS: teslaS};
+
+});

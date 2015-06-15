@@ -207,6 +207,10 @@ body {
 	clear: both;
 }
 
+.textAlignLeft {
+	text-align: left;
+}
+
 .textAlignRight {
 	text-align: right;
 }
@@ -335,22 +339,6 @@ header .block-group {
 	text-align: left;
 	width: 100%;
 }
-/* Navbar toggle draws from Brad Frost's Toggle Navigation 
-* Responsive Design Pattern
-* found here: http://codepen.io/bradfrost/full/sHvaz
-* 
-* MIT License: http://opensource.org/licenses/MIT
-*/
-
-.navbar.active {
-	max-height: 15em;
-}
-
-a.menu-link {
-	font-size: 1.2em;
-	width: 19%;
-	box-sizing: border-box;
-}
 
 .navbarSearch {
 	position: absolute;
@@ -411,7 +399,15 @@ footer .block-group .block {
 }
 
 #vehicleImage img {
-	width: 100%
+	width: 100%;
+}
+
+.vehicleInfo div:not(:first-child) {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 #contactForm input[type="text"] {
@@ -421,6 +417,155 @@ footer .block-group .block {
 #contactForm input[type="email"] {
 	width: 20em;
 }
+
+/* Navbar toggle draws from Brad Frost's Toggle Navigation 
+* Responsive Design Pattern
+* found here: http://codepen.io/bradfrost/full/sHvaz
+* 
+* MIT License: http://opensource.org/licenses/MIT
+*/
+
+.navbar.active {
+	max-height: 15em;
+}
+
+a.menu-link {
+	font-size: 1.2em;
+	width: 19%;
+	box-sizing: border-box;
+}
+
+/* 
+ * Code and design for carousel/slider comes partially from 
+ * here: http://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/
+ * 
+ * and partially from Twitter Bootstrap: http://getbootstrap.com/examples/carousel/
+ * which is another MIT License: http://opensource.org/licenses/MIT
+ */
+
+.slider {
+	width: 100%;
+	overflow: visible;
+	background-color: #444;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.slideItems>div {
+	width: 100%;
+	display: inline-block;
+	display: none;
+}
+
+.slideItems img {
+	width: 100%;
+	margin-bottom: -.5em;
+}
+
+.sliderText {	
+	color: #dbdbdb;
+}
+
+/* .slideItems h1 {
+	color: #444;
+	position: absolute;
+	top: 100%;
+}
+
+.slideItems p {
+	color: #444;
+	position: absolute;
+	top: 120%;
+} */
+
+.btnSlider {
+	position: absolute;
+	top: 30vw;
+	margin-top: -.5em;
+}
+
+.slideNext {
+	right: 10%;
+}
+
+.slidePrev {
+	left: 10%;
+}
+
+.sliderControl.next {
+	right: 0;
+	left: auto;
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+	background-repeat: repeat-x;
+	z-index: 10;
+}
+
+.sliderControl.prev {
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+
+.sliderControl {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	font-size: 3em;
+	font-weight: bolder;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+	filter: alpha(opacity=50);
+	opacity: .5;
+	z-index: 5;
+}
+
+.sliderControl:hover {
+	opacity: .9;
+}
+
+.sliderIndicators {
+	position: absolute;
+	top: 50vw;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none;
+}
+
+.sliderIndicators .active {
+	width: .6em;
+	height: .6em;
+	margin: 5px;
+	background-color: #fff;
+}
+
+.sliderIndicators li {
+	display: inline-block;
+	width: .6em;
+	height: .6em;
+	margin: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #000 \9;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
 /* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Note: The best way to structure the use of media queries is to create the queries
 *  near the relevant code. For example, if you wanted to change the styles for buttons
@@ -495,8 +640,7 @@ footer .block-group .block {
 		text-align: right;
 		clear: both;
 	}
-	
-	
+
 	footer .block-group .block {
 		width: 46%;
 		margin: 1rem 2%;
@@ -515,7 +659,43 @@ footer .block-group .block {
 	#vehicleImage img {
 		width: 100%
 	}
+	.slider {
+		overflow: hidden;
+		max-height: 70vh;
+		margin-bottom: 0;
+	}
+	.sliderText span{	
+		background: #444;
+		background: rgb(0, 0, 0); /* fallback color */
+		background: rgba(0, 0, 0, 0.7);
+		color: #dbdbdb;
+	}
+	.slideItems h1 {
+		width: 40%;
+		position: absolute;
+		left: 10%;
+		top: 10vh;	
+	}
+	.slideItems p {
+		width: 30%;
+		position: absolute;
+		left: 60%;
+		top: 15vh;	
+	}
+	.btnSlider {
+		top: 50%;
+	}
+	.sliderIndicators {
+		top: 55vw;
+	}
 }
+
+@media (min-width: 800px) {
+	.sliderIndicators {
+		top: 60vh;
+	}
+}
+
 /* Larger than desktop */
 
 @media (min-width: 1000px) {
@@ -523,17 +703,22 @@ footer .block-group .block {
 		 width: 70%;
 		 margin-right: 5%; }
 	 .navbarSearch {
-		 width: 25%; } */
+		 width: 25%; } 
+	#vehicleImage img {
+		width: 80%
+	}
+	*/
 
 	header {
 		padding: 1rem 5%;
 	}
-	
+
 	#contactForm textArea {
 		width: 80%;
 	}
-	#vehicleImage img {
-		width: 80%
+	.slideItems p {
+		width: 25%;
+		top: 25vh;	
 	}
 }
 /* Larger than Desktop HD */
@@ -545,123 +730,14 @@ footer .block-group .block {
 	 .navbarSearch {
 		 width: 25%; }
 	*/
+	.slideItems img {
+		margin-top: -5%;
+	}
+	.slideItems p {
+		width: 20%;
+	}
 
 	#contactForm textArea {
 		width: 60%;
 	}
-}
-/* 
- * Code and design for carousel/slider comes partially from 
- * here: http://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/
- * 
- * and partially from Twitter Bootstrap: http://getbootstrap.com/examples/carousel/
- * which is another MIT License: http://opensource.org/licenses/MIT
- */
-
-.slider {
-	width: 100%;
-	max-height: 70vh;
-	overflow: hidden;
-	background-color: #dbdbdb;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
-}
-
-.slideItems div {
-	width: 100%;
-	display: inline-block;
-	display: none;
-}
-
-.slideItems img {
-	width: 100%;
-	margin-bottom: -.5em;
-}
-
-.btnSlider {
-	position: absolute;
-	top: 50%;
-	margin-top: -.5em;
-}
-
-.slideNext {
-	right: 10%;
-}
-
-.slidePrev {
-	left: 10%;
-}
-
-.sliderControl.next {
-	right: 0;
-	left: auto;
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-	background-repeat: repeat-x;
-	z-index: 10;
-}
-
-.sliderControl.prev {
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-	background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-	background-repeat: repeat-x;
-}
-
-.sliderControl {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 15%;
-	font-size: 3em;
-	font-weight: bolder;
-	color: #fff;
-	text-align: center;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-	filter: alpha(opacity=50);
-	opacity: .5;
-	z-index: 5;
-}
-
-.sliderControl:hover {
-	opacity: .9;
-}
-
-.sliderIndicators {
-	position: absolute;
-	bottom: 1em;
-	left: 50%;
-	z-index: 15;
-	width: 60%;
-	padding-left: 0;
-	margin-left: -30%;
-	text-align: center;
-	list-style: none;
-}
-
-.sliderIndicators .active {
-	width: .6em;
-	height: .6em;
-	margin: 5px;
-	background-color: #fff;
-}
-
-.sliderIndicators li {
-	display: inline-block;
-	width: .6em;
-	height: .6em;
-	margin: 5px;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: #000 \9;
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid #fff;
-	border-radius: 10px;
 }

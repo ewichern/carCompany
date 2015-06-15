@@ -450,7 +450,7 @@ a.menu-link {
 .slider {
 	width: 100%;
 	overflow: visible;
-	background-color: #444;
+	background-color: #dbdbdb;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
@@ -468,16 +468,15 @@ a.menu-link {
 }
 
 .sliderText {	
-	color: #dbdbdb;
-}
-
-/* .slideItems h1 {
 	color: #444;
-	position: absolute;
-	top: 100%;
+    background: #dbdbdb;
 }
 
-.slideItems p {
+.slideItems h1 {
+    font-size: 3.0rem;
+}
+
+/* .slideItems p {
 	color: #444;
 	position: absolute;
 	top: 120%;
@@ -669,7 +668,6 @@ a.menu-link {
 		margin-bottom: 0;
 	}
 	.sliderText span{		
-		background: #444;
 		background: rgb(0, 0, 0); /* fallback color */
 		background: rgba(0, 0, 0, 0.7);
 		color: #dbdbdb;
@@ -680,6 +678,7 @@ a.menu-link {
 		position: absolute;
 		left: 10%;
 		top: 10vh;	
+        font-size: 4rem;
 	}
 	.slideItems p {
 		width: 30%;

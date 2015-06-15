@@ -398,6 +398,10 @@ footer .block-group .block {
 	width: 100%;
 }
 
+#contactForm div {
+	margin-bottom: 0.5em;
+}
+
 #vehicleImage img {
 	width: 100%;
 }
@@ -664,11 +668,12 @@ a.menu-link {
 		max-height: 70vh;
 		margin-bottom: 0;
 	}
-	.sliderText span{	
+	.sliderText span{		
 		background: #444;
 		background: rgb(0, 0, 0); /* fallback color */
 		background: rgba(0, 0, 0, 0.7);
 		color: #dbdbdb;
+		padding: 0.1em;		
 	}
 	.slideItems h1 {
 		width: 40%;
@@ -681,6 +686,12 @@ a.menu-link {
 		position: absolute;
 		left: 60%;
 		top: 15vh;	
+		background: #444;
+		background: rgb(0, 0, 0); /* fallback color */
+		background: rgba(0, 0, 0, 0.7);
+		color: #dbdbdb;
+		padding: 0.1em;
+
 	}
 	.btnSlider {
 		top: 50%;

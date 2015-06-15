@@ -81,57 +81,60 @@ $(document).ready(function() {
 				$('#vehicleImage img').attr('src', './images/'.concat(selectedCar[key]).toString());
 				$('#vehicleImage img').attr('alt', selection);
 			}
-		}	
+		}
 		$('#selectionDropdown').addClass('block');
 		$('.vehicleInfo .hide').addClass('block');
 		$('#selectionDropdown').removeClass('textAlignCenter');
 		$('.vehicleInfo .hide').removeClass('hide');
 	});
 
-/*
- * Code for Vehicle Browser page
- */
+	/*
+	 * Code for Vehicle Browser page
+	 */
 
-var carData = {};
+	var carData = {};
 
-carData.proto = {
-	manufacturer: "",
-	model: "",
-	modelYear: 1900,
-	vehicleClass: "",
-	bodyStyle: "",
-	layout: "",
-	drivetrainType: "",
-	engine: "",
-	electricMotor: "",
-	transmission: "",
-	battery: "",
-	range: "",
-	electricRange: "",
-	charging: "",
-	wheelbase: "",
-	length: "",
-	width: "",
-	height: "",
-	curbWeight: "",
-	imageFilename: ""
-};
+	carData.proto = {
+		manufacturer: "",
+		model: "",
+		modelYear: 1900,
+		vehicleClass: "",
+		bodyStyle: "",
+		layout: "",
+		drivetrainType: "",
+		engine: "",
+		electricMotor: "",
+		transmission: "",
+		battery: "",
+		range: "",
+		electricRange: "",
+		charging: "",
+		wheelbase: "",
+		length: "",
+		width: "",
+		height: "",
+		curbWeight: "",
+		imageFilename: ""
+	};
 
 // Object factory
-carData.create = function(dataArray) {
-	var tempCar = Object.create(this.proto);
-	var count = 0;
-	for (var key in tempCar) {
-		tempCar[key] = dataArray[count];
-		count++;
-	}
-	return tempCar;
-};
+	carData.create = function(dataArray) {
+		var tempCar = Object.create(this.proto);
+		var count = 0;
+		for (var key in tempCar) {
+			tempCar[key] = dataArray[count];
+			count++;
+		}
+		return tempCar;
+	};
+	voltArray = ["General Motors", "Chevrolet Volt", "2015", "Compact Car", "5-door hatchback", "Transverse front-engine, front-wheel drive", "Hybrid (GM Voltec)", "1 x 84hp, 1398cc EcoFLEX Inline 4cyl", "1 x 149hp, 1 x 74hp, permanent magnet motor/generators", "Voltec Multi-mode electric transaxle", "17.1kWh lithium-Ion", "380 miles", "52 miles", "120V/15A, 240V/20A AC", "105.7 in", "177.1 in", "70.4 in", "56.6 in", "3,794 lb", "volt.jpg"];
+	leafArray = ["Nissan", "Leaf", "2013", "Compact Car", "5-door hatchback", "Front-engine, front-wheel drive", "Electric", "n/a", "110hp synchronous motor", "Single speed constant ratio", "24kWh lithium-ion", "75 miles", "75 miles", "3.3kW (optional 6.6kW + 240V AC), adaptors for domestic AC sockets -- max 44 kW 480V DC", "106.3 in", "175.0 in", "69.7 in", "61.0 in", "3,291 lb", "leaf.jpg"];
+	teslaArray = ["Tesla Motors", "Tesla Model S", "2015", "Full-size Luxury", "5-door liftback", "Rear-motor, rear-wheel drive or Dual motor all-wheel drive ('D' versions)", "Electric", "n/a", "416bhp three-phase AC induction motor", "1-speed fixed gear", "40, 60, 70, or 85 kWh lithium-ion", "75 kWh: 240 miles <br/> 85 kWh: 265 miles", "75 kWh: 240 miles <br/> 85 kWh: 265 miles", "11 kW 85-265 V onboard charger, optional twin charger for 22 kWh, Supercharger for 120 kWh DC offboard charging, adaptors for domestic AC sockets", "116.5 in", "195.9 in", "77.3 in", "56.5 in", "4,323 lb (S60) - 4,936 lb (P85D)", "tesla.jpg"];
 
-chevyVolt = carData.create(voltArray);
-nissanLeaf = carData.create(leafArray);
-teslaS = carData.create(teslaArray);
+	chevyVolt = carData.create(voltArray);
+	nissanLeaf = carData.create(leafArray);
+	teslaS = carData.create(teslaArray);
 
-carSelectionArray = {chevyVolt: chevyVolt, nissanLeaf: nissanLeaf, teslaS: teslaS};
+	carSelectionArray = {chevyVolt: chevyVolt, nissanLeaf: nissanLeaf, teslaS: teslaS};
 
 });

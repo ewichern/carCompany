@@ -8,129 +8,88 @@ $color5: #c8c8c8;
 $color6: #dbdbdb;
 $color7: #ededed;
 */
+
+
 /* This section modified from Skeleton CSS framework
 * Skeleton V2.0.4 -  Copyright 2014, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license - http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014 */
 
-.btnDefault,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-	display: inline-block;
-	height: 1.5em;
-	padding: 0 0.5em;
-	color: #ededed;
-	text-align: center;
-	font-size: 1.1em;
-	font-weight: 600;
-	line-height: 1.5em;
-	letter-spacing: .1em;
-	text-transform: capitalize;
-	text-decoration: none;
-	white-space: nowrap;
-	background-color: #444;
-	border-radius: .2em;
-	border: 1px solid #ededed;
-	cursor: pointer;
-	box-sizing: border-box;
-	vertical-align: top;
+.btnDefault, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  display: inline-block;
+  height: 1.5em;
+  padding: 0 0.5em;
+  color: #ededed;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: .1em;
+  text-transform: capitalize;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #444;
+  border-radius: .2em;
+  border: 1px solid #ededed;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.btnDefault:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .btnDefault:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  background-color: #666;
+  border-color: #92dac6;
+  color: #92dac6;
 }
 
-.btnDefault:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.btnDefault:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-	background-color: #666;
-	border-color: #92dac6;
-	color: #92dac6;
-}
 /* Forms–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-	height: 1.7em;
-	padding: 0 .5em;
-	/* The 6px vertically centers text on FF, ignored by Webkit */
-
-	background-color: #ededed;
-	border: 1px solid #444;
-	border-radius: .2em;
-	box-shadow: none;
-	box-sizing: border-box;
-	vertical-align: top;
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  height: 1.7em;
+  padding: 0 .5em;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #ededed;
+  border: 1px solid #444;
+  border-radius: .2em;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: top;
 }
+
 /* Removes awkward default styles on some inputs for iOS */
 
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  min-height: 5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
-
-textarea {
-	min-height: 5em;
-	padding-top: .5em;
-	padding-bottom: .5em;
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  border: 1px solid #92dac6;
+  outline: 0;
 }
-
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-	border: 1px solid #92dac6;
-	outline: 0;
+label, legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
 }
-
-label,
-legend {
-	display: block;
-	margin-bottom: .5rem;
-	font-weight: 600;
-}
-
 fieldset {
-	padding: 0;
-	border-width: 0;
+  padding: 0;
+  border-width: 0;
 }
-
-input[type="checkbox"],
-input[type="radio"] {
-	display: inline;
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
 }
-
 label > .label-body {
-	display: inline-block;
-	margin-left: .5rem;
-	font-weight: normal;
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
 }
+
 /*! PocketGrid 1.1.0
 * Copyright 2013 Arnaud Leray
 * MIT License
@@ -138,342 +97,272 @@ label > .label-body {
 * Also dumped through codebeautifier to minimize # lines.
 */
 
-.block-group,
-.block,
-.block-group:after,
-.block:after,
-.block-group:before,
-.block:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+.block-group, .block, .block-group:after, .block:after, .block-group:before, .block:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .block-group {
-	zoom: 1;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
-.block-group:before,
+.block-group:before, .block-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
 .block-group:after {
-	display: table;
-	content: "";
-	line-height: 0;
+  clear: both;
 }
-
-.block-group:after {
-	clear: both;
-}
-
 .block {
-	float: left;
-	width: 100%;
+  float: left;
+  width: 100%;
+}
+.block-group > .block-group, .block-group > .block-group > .block-group {
+  clear: none;
+  float: left;
+  margin: 0!important;
 }
 
-.block-group > .block-group,
-.block-group > .block-group > .block-group {
-	clear: none;
-	float: left;
-	margin: 0!important;
-}
 /* Start standard CSS */
+
 /* Setting base styles */
 
 root {
-	display: block;
+  display: block;
 }
-
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 body {
-	font-size: 1.4em;
-	line-height: 1.5em;
-	font-weight: 400;
-	font-family: "Trebuchet MS", Helvetica, Calibri, sans-serif;
-	color: #444;
-	letter-spacing: 0.025em;
-	text-align: left;
-	text-decoration: none;
-	text-transform: none;
-	word-spacing: 0;
-	background-color: #ededed;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-family: "Trebuchet MS", Helvetica, Calibri, sans-serif;
+  color: #444;
+  letter-spacing: 0.025em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  word-spacing: 0;
+  background-color: #ededed;
 }
-
 .clearfix {
-	clear: both;
+  clear: both;
 }
-
 .textAlignLeft {
-	text-align: left;
+  text-align: left;
 }
-
 .textAlignRight {
-	text-align: right;
+  text-align: right;
 }
 .textAlignCenter {
-	text-align: center;
+  text-align: center;
 }
-
 .hide {
-	visibility: hidden;
+  visibility: hidden;
 }
-
 a {
-	color: #43bc9a;
-	text-decoration: none;
+  color: #43bc9a;
+  text-decoration: none;
 }
-
 a:hover {
-	color: #92dac6
+  color: #92dac6
 }
-
 p {
-	margin-top: 0;
-	margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-top: 0;
-	margin-bottom: 1rem;
-	font-weight: 300;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
-
 h1 {
-	font-size: 4.0rem;
-	line-height: 1.2;
-	letter-spacing: -.1rem;
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
 }
-
 h2 {
-	font-size: 3.4rem;
-	line-height: 1.25;
-	letter-spacing: -.1rem;
+  font-size: 3.4rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
 }
-
 h3 {
-	font-size: 2.8rem;
-	line-height: 1.3;
-	letter-spacing: -.1rem;
+  font-size: 2.8rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
 }
-
 h4 {
-	font-size: 2.4rem;
-	line-height: 1.35;
-	letter-spacing: -.08rem;
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
 }
-
 h5 {
-	font-size: 1.8rem;
-	line-height: 1.5;
-	letter-spacing: -.05rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
 }
-
 h6 {
-	font-size: 1.5rem;
-	line-height: 1.6;
-	letter-spacing: 0;
-	font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: bold;
 }
-
-header,
-footer {
-	position: relative;
-	min-height: 2em;
-	background-color: #43bc9a;
-	padding: 1rem;
+header, footer {
+  position: relative;
+  min-height: 2em;
+  background-color: #43bc9a;
+  padding: 1rem;
 }
-
-footer a,
-header a {
-	color: #ededed;
+footer a, header a {
+  color: #ededed;
 }
-
-header a:hover,
-footer a:hover {
-	color: #92dac6;
+header a:hover, footer a:hover {
+  color: #92dac6;
 }
-
 header .block-group {
-	position: relative;
+  position: relative;
 }
-
 .vehicleInfo {
-	line-height: 1.2;
+  line-height: 1.2;
 }
-
-.vehicleInfo h1,
-.vehicleInfo h2,
-.vehicleInfo h3,
-.vehicleInfo h4,
-.vehicleInfo h5,
-.vehicleInfo h6
-{
-	margin-top: 0;
-	margin-bottom: 0;
+.vehicleInfo h1, .vehicleInfo h2, .vehicleInfo h3, .vehicleInfo h4, .vehicleInfo h5, .vehicleInfo h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 .navbar {
-	overflow: hidden;
-	clear: both;
-	max-height: 0;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	font-size: 1.2em;
-	width: 79%;
-	box-sizing: border-box;
+  overflow: hidden;
+  clear: both;
+  max-height: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-size: 1.2em;
+  width: 79%;
+  box-sizing: border-box;
 }
-
 .navbar li {
-	text-align: left;
-	width: 100%;
+  text-align: left;
+  width: 100%;
 }
-
 .navbarSearch {
-	position: absolute;
-	right: 1%;
-	top: 0.6em;
-	width: 80%;
+  position: absolute;
+  right: 1%;
+  top: 0.6em;
+  width: 80%;
 }
-
 .navbarSearch form {
-	float: right;
+  float: right;
 }
-
 .searchInput {
-	position: absolute;
-	right: 85px;
+  position: absolute;
+  right: 85px;
 }
-
 .searchInput input {
-	width: 100%;
+  width: 100%;
 }
-
 #searchSubmit {
-	float: right;
-	width: 80px;
+  float: right;
+  width: 80px;
 }
-
 footer .block-group {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 footer .block-group .block {
-	width: 100%;
+  width: 100%;
 }
-
 .footerLinks .block-group .block {
-	width: 100%;
-	margin: 0;
-	text-align: center;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
-
 .footerText {
-	text-align: center;
+  text-align: center;
 }
-
 .twoCol {
-	background-color: #dbdbdb;
-	padding: 1rem;
+  background-color: #dbdbdb;
+  padding: 1rem;
 }
-
 .twoCol>.block {
-	width: 100%;
-	margin-bottom: 1em;
+  width: 100%;
+  margin-bottom: 1em;
 }
-
 #contactForm textArea {
-	width: 100%;
+  width: 100%;
 }
-
 #contactForm div {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
-
 #vehicleImage img {
-	width: 100%;
+  width: 100%;
 }
-
 .vehicleInfo div:not(:first-child) {
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 #contactForm input[type="text"] {
-	width: 15em;
+  width: 15em;
 }
-
 #contactForm input[type="email"] {
-	width: 20em;
+  width: 20em;
 }
 
-/* Navbar toggle draws from Brad Frost's Toggle Navigation 
+/* Navbar toggle draws from Brad Frost's Toggle Navigation
 * Responsive Design Pattern
 * found here: http://codepen.io/bradfrost/full/sHvaz
-* 
+*
 * MIT License: http://opensource.org/licenses/MIT
 */
 
 .navbar.active {
-	max-height: 15em;
+  max-height: 15em;
 }
-
 a.menu-link {
-	font-size: 1.2em;
-	width: 19%;
-	box-sizing: border-box;
+  font-size: 1.2em;
+  width: 19%;
+  box-sizing: border-box;
 }
 
-/* 
- * Code and design for carousel/slider comes partially from 
+/*
+ * Code and design for carousel/slider comes partially from
  * here: http://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/
- * 
+ *
  * and partially from Twitter Bootstrap: http://getbootstrap.com/examples/carousel/
  * which is another MIT License: http://opensource.org/licenses/MIT
  */
 
 .slider {
-	width: 100%;
-	overflow: visible;
-	background-color: #dbdbdb;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
+  width: 100%;
+  overflow: visible;
+  background-color: #dbdbdb;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
 }
-
 .slideItems>div {
-	width: 100%;
-	display: inline-block;
-	display: none;
+  width: 100%;
+  display: inline-block;
+  display: none;
 }
-
 .slideItems img {
-	width: 100%;
-	margin-bottom: -.5em;
+  width: 100%;
+  margin-bottom: -.5em;
 }
-
-.sliderText {	
-	color: #444;
-    background: #dbdbdb;
+.sliderText {
+  color: #444;
+  background: #dbdbdb;
 }
-
 .slideItems h1 {
-    font-size: 3.0rem;
+  font-size: 3.0rem;
 }
 
 /* .slideItems p {
@@ -483,131 +372,132 @@ a.menu-link {
 } */
 
 .btnSlider {
-	position: absolute;
-	top: 30vw;
-	margin-top: -.5em;
+  position: absolute;
+  top: 30vw;
+  margin-top: -.5em;
 }
-
 .slideNext {
-	right: 10%;
+  right: 10%;
 }
-
 .slidePrev {
-	left: 10%;
+  left: 10%;
 }
-
 .sliderControl.next {
-	right: 0;
-	left: auto;
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-	background-repeat: repeat-x;
-	z-index: 10;
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+  z-index: 10;
 }
-
 .sliderControl.prev {
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-	background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-	background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
 }
-
 .sliderControl {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 15%;
-	font-size: 3em;
-	font-weight: bolder;
-	color: #fff;
-	text-align: center;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-	filter: alpha(opacity=50);
-	opacity: .5;
-	z-index: 5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 3em;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: .5;
+  z-index: 5;
 }
-
 .sliderControl:hover {
-	opacity: .9;
+  opacity: .9;
 }
-
 .sliderIndicators {
-	position: absolute;
-	top: 50vw;
-	left: 50%;
-	z-index: 15;
-	width: 60%;
-	padding-left: 0;
-	margin-left: -30%;
-	text-align: center;
-	list-style: none;
+  position: absolute;
+  top: 50vw;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
 }
-
 .sliderIndicators .active {
-	width: .6em;
-	height: .6em;
-	margin: 5px;
-	background-color: #fff;
+  width: .6em;
+  height: .6em;
+  margin: 5px;
+  background-color: #fff;
 }
-
 .sliderIndicators li {
-	display: inline-block;
-	width: .6em;
-	height: .6em;
-	margin: 5px;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: #000 \9;
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid #fff;
-	border-radius: 10px;
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  margin: 5px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 /* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
 /* Note: The best way to structure the use of media queries is to create the queries
 *  near the relevant code. For example, if you wanted to change the styles for buttons
 *  on small devices, paste the mobile query code up in the buttons section and style it
 *  there.*/
+
+
 /* Larger than mobile */
 
 @media (min-width: 400px) {}
+
 /* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {}
+
 /* Larger than tablet */
 
 @media (min-width: 750px) {}
+
 /* Larger than desktop */
 
 @media (min-width: 1000px) {}
+
 /* Larger than Desktop HD */
 
 @media (min-width: 1200px) {}
+
 /* Larger than mobile */
 
 @media (min-width: 400px) {
-	.twoCol {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#contactForm textArea {
-		width: 80%;
-	}
-	#vehicleImage img {
-		width: 100%
-	}
+  .twoCol {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contactForm textArea {
+    width: 80%;
+  }
+  #vehicleImage img {
+    width: 100%
+  }
 }
+
 /* Larger than tablet */
 
 @media (min-width: 700px) {
-	/*	.navbar {
+  /*	.navbar {
 			 width: 65%; }
 		 .navbar li {
 			 width: 25%;
@@ -615,139 +505,135 @@ a.menu-link {
 		 .navbarSearch {
 			 width: 35%; }
 	*/
-
-	a.menu-link {
-		display: none;
-	}
-	.navbar {
-		max-height: none;
-		width: 80%
-	}
-	.navbar li {
-		text-align: center;
-		width: 25%;
-	}
-	.navbarSearch {
-		width: 20%;
-	}
-	.twoCol {
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.twoCol>.block {
-		width: 46%;
-		margin: 1rem 2%;
-	}
-	.vehicleInfo .block:nth-child(odd) {
-		text-align: right;
-		clear: both;
-	}
-
-	footer .block-group .block {
-		width: 46%;
-		margin: 1rem 2%;
-	}
-	.footerLinks .block-group .block {
-		width: 100%;
-		text-align: right;
-		margin: 0;
-	}
-	.footerText {
-		text-align: left;
-	}
-	#contactForm textArea {
-		width: 100%;
-	}
-	#vehicleImage img {
-		width: 100%
-	}
-	.slider {
-		overflow: hidden;
-		max-height: 70vh;
-		margin-bottom: 0;
-	}
-	.sliderText span{		
-		background: rgb(0, 0, 0); /* fallback color */
-		background: rgba(0, 0, 0, 0.7);
-		color: #dbdbdb;
-		padding: 0.1em;		
-	}
-	.slideItems h1 {
-		width: 40%;
-		position: absolute;
-		left: 10%;
-		top: 10vh;	
-        font-size: 4rem;
-	}
-	.slideItems p {
-		width: 30%;
-		position: absolute;
-		left: 60%;
-		top: 15vh;	
-		background: #444;
-		background: rgb(0, 0, 0); /* fallback color */
-		background: rgba(0, 0, 0, 0.7);
-		color: #dbdbdb;
-		padding: 0.1em;
-
-	}
-	.btnSlider {
-		top: 50%;
-	}
-	.sliderIndicators {
-		top: 55vw;
-	}
+  a.menu-link {
+    display: none;
+  }
+  .navbar {
+    max-height: none;
+    width: 80%
+  }
+  .navbar li {
+    text-align: center;
+    width: 25%;
+  }
+  .navbarSearch {
+    width: 20%;
+  }
+  .twoCol {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .twoCol>.block {
+    width: 46%;
+    margin: 1rem 2%;
+  }
+  .vehicleInfo .block:nth-child(odd) {
+    text-align: right;
+    clear: both;
+  }
+  footer .block-group .block {
+    width: 46%;
+    margin: 1rem 2%;
+  }
+  .footerLinks .block-group .block {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+  }
+  .footerText {
+    text-align: left;
+  }
+  #contactForm textArea {
+    width: 100%;
+  }
+  #vehicleImage img {
+    width: 100%
+  }
+  .slider {
+    overflow: hidden;
+    max-height: 70vh;
+    margin-bottom: 0;
+  }
+  .sliderText span {
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    color: #dbdbdb;
+    padding: 0.1em;
+  }
+  .slideItems h1 {
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 10vh;
+    font-size: 4rem;
+  }
+  .slideItems p {
+    width: 30%;
+    position: absolute;
+    left: 60%;
+    top: 15vh;
+    background: #444;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    color: #dbdbdb;
+    padding: 0.1em;
+  }
+  .btnSlider {
+    top: 50%;
+  }
+  .sliderIndicators {
+    top: 55vw;
+  }
 }
-
 @media (min-width: 800px) {
-	.sliderIndicators {
-		top: 60vh;
-	}
+  .sliderIndicators {
+    top: 60vh;
+  }
 }
 
 /* Larger than desktop */
 
 @media (min-width: 1000px) {
-	/* .navbar {
+  /* .navbar {
 		 width: 70%;
 		 margin-right: 5%; }
 	 .navbarSearch {
-		 width: 25%; } 
+		 width: 25%; }
 	#vehicleImage img {
 		width: 80%
 	}
 	*/
-
-	header {
-		padding: 1rem 5%;
-	}
-
-	#contactForm textArea {
-		width: 80%;
-	}
-	.slideItems p {
-		width: 25%;
-		top: 25vh;	
-	}
+  header {
+    padding: 1rem 5%;
+  }
+  #contactForm textArea {
+    width: 80%;
+  }
+  .slideItems p {
+    width: 25%;
+    top: 25vh;
+  }
 }
+
 /* Larger than Desktop HD */
 
 @media (min-width: 1200px) {
-	/* .navbar {
+  /* .navbar {
 		 width: 55%;
 		 margin-right: 20%; }
 	 .navbarSearch {
 		 width: 25%; }
 	*/
-	.slideItems img {
-		margin-top: -5%;
-	}
-	.slideItems p {
-		width: 20%;
-	}
-
-	#contactForm textArea {
-		width: 60%;
-	}
+  .slideItems img {
+    margin-top: -5%;
+  }
+  .slideItems p {
+    width: 20%;
+  }
+  #contactForm textArea {
+    width: 60%;
+  }
 }

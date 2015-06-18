@@ -342,7 +342,8 @@ a.menu-link {
 
 .slider {
   width: 100%;
-  overflow: visible;
+  max-height: 70vh;
+  overflow: hidden;
   background-color: #dbdbdb;
   margin: 0 auto;
   text-align: center;
@@ -358,8 +359,11 @@ a.menu-link {
   margin-bottom: -.5em;
 }
 .sliderText {
+  display: none;
+  /*
   color: #444;
   background: #dbdbdb;
+   */
 }
 .slideItems h1 {
   font-size: 3.0rem;
@@ -373,7 +377,7 @@ a.menu-link {
 
 .btnSlider {
   position: absolute;
-  top: 30vw;
+  top: 50%;
   margin-top: -.5em;
 }
 .slideNext {
@@ -421,7 +425,7 @@ a.menu-link {
 }
 .sliderIndicators {
   position: absolute;
-  top: 50vw;
+  bottom: 1em ;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -562,6 +566,9 @@ a.menu-link {
     color: #dbdbdb;
     padding: 0.1em;
   }
+  .slideItems img {
+    margin-top: -5%;
+  }
   .slideItems h1 {
     width: 40%;
     position: absolute;
@@ -581,18 +588,22 @@ a.menu-link {
     color: #dbdbdb;
     padding: 0.1em;
   }
+  /*
   .btnSlider {
     top: 50%;
   }
   .sliderIndicators {
     top: 55vw;
   }
+  */
 }
+/*
 @media (min-width: 800px) {
   .sliderIndicators {
     top: 60vh;
   }
 }
+*/
 
 /* Larger than desktop */
 
@@ -612,6 +623,9 @@ a.menu-link {
   #contactForm textArea {
     width: 80%;
   }
+  .slideItems img {
+    margin-top: -8%;
+  }
   .slideItems p {
     width: 25%;
     top: 25vh;
@@ -627,9 +641,6 @@ a.menu-link {
 	 .navbarSearch {
 		 width: 25%; }
 	*/
-  .slideItems img {
-    margin-top: -5%;
-  }
   .slideItems p {
     width: 20%;
   }
